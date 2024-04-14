@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <section id="MessageRequest">
+      <center>  <h2>MessageRequest</h2></center>
+        <ul id="messages"></ul>
+        <form id="compose-form">
+            <input type="hidden" id="recipient" value="someone@example.com">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required><br><br>
+            <label for="body">Message:</label><br>
+            <textarea id="body" rows="5" cols="52" required></textarea><br><br>
+            <button onclick='sub()'>Send</button>
+        </form>
+    </section>
+</head>
+<body>
+    <style>
+        form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,52);
+}
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="address"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+}
+button:hover {
+    background-color: #4f48cc;
+}
+
+    </style>
+
+    <script>
+        function sub(){
+            alert("the message is sent");
+        }
+    </script>
+    </body>
+    </html>
+
+    

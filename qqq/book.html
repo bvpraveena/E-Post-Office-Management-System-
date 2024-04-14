@@ -1,0 +1,39 @@
+<html>
+<body>
+  <script>
+    function sup(){
+      alert("successfully submited");
+    }
+  </script>
+
+<section id="book-post">
+  <h2>BOOK POST</h2>
+  <center>
+  <form>
+    <label for="sender-name">Sender's Name:</label><br>
+    <input type="text" id="sender-name" name="sender-name" required><br>
+
+    <label for="sender-address">Sender's Address:</label><br>
+    <textarea id="sender-address" name="sender-address" rows="4" cols="25" required></textarea><br>
+
+    <label for="receiver-name">Receiver's Name:</label><br>
+    <input type="text" id="receiver-name" name="receiver-name" required><br>
+
+    <label for="receiver-address">Receiver's Address:</label><br>
+    <textarea id="receiver-address" name="receiver-address" rows="4" cols="25" required></textarea><br>
+
+    <label for="book-title">Book Title:</label><br>
+    <input type="text" id="book-title" name="book-title" required><br>
+
+    <label for="book-author">Book Author:</label><br>
+    <input type="text" id="book-author" name="book-author" required><br>
+
+    <label for="book-publisher">Book Publisher:</label><br>
+    <input type="text" id="book-publisher" name="book-publisher" required><br>
+
+    <button onclick='sup()'>Submit</button>
+</form>
+</center>
+</section>
+</body>
+</html>

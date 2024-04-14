@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>E-Postal Services Network</title>
+ <style>
+     form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,52);
+}
+#billing-info{
+  max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,52);
+}
+ </style>
+</head>
+<body>
+ <header>
+ <h1>E-Postal Services Network</h1>
+ </header>
+ <main>
+ <form id="shipping-form">
+ <div class="form-row">
+ <label for="first-name">First Name:</label>
+ <input type="text" id="first-name" required>
+ </div>
+ <div class="form-row">
+ <label for="last-name">Last Name:</label>
+ <input type="text" id="last-name" required>
+ </div>
+ <div class="form-row">
+ <label for="email">Email ID:</label>
+ <input type="email" id="email" required>
+ </div>
+ <div class="form-row">
+ <label for="address">Address:</label>
+ <input type="text" id="address" required>
+ </div>
+ <div class="form-row">
+ <label for="search">Search:</label>
+ <input type="text" id="search" disabled>
+ </div>
+ <div class="form-row">
+ <label for="contact-no">Contact No.:</label>
+ <input type="tel" id="contact-no" required>
+ </div>
+ <div class="form-row">
+ <label for="country">Country:</label>
+ <select id="country" required>
+ <option value="India">India</option>
+ <option value="Pakistan">Pakistan</option>
+ <option value="Bangladesh">Bangladesh</option>
+ </select>
+ </div>
+ <div class="form-row">
+ <label for="state">State:</label>
+ <select id="state" required>
+ <option value="AndhraPradesh">Andhra Pradesh</option>
+ <option value="Telangana">Telangana</option>
+ <option value="Karnataka">Karnataka</option>
+ </select>
+ </div>
+ <div class="form-row">
+ <label for="city">City:</label>
+ <input type="text" id="city" required>
+ </div>
+ <div class="form-row">
+ <label for="zipcode">Zipcode:</label>
+ <input type="text" id="zipcode" required>
+ </div>
+ <div class="form-row">
+ <button type="submit">Done</button>
+ </div>
+ </form>
+ <div>
+
+  <br><br><br><br><br><br>
+ <div id="billing-info">
+ <p>Billing Address</p>
+ 
+ <p>Same as Shipping Address</p>
+ <div class="form-row">
+ <label for="first-name-billing">First Name:</label>
+ <input type="text" id="first-name-billing" value="">
+ </div>
+ <div class="form-row">
+ <label for="last-name-billing">Last Name:</label>
+ <input type="text" id="last-name-billing" value="">
+ </div>
+ <div class="form-row">
+ <label for="email-billing">Email ID:</label>
+ <input type="email" id="email-billing" value="">
+ </div>
+ <div class="form-row">
+ <label for="address-billing">Address:</label>
+ <input type="text" id="address-billing">
+ </div>
+ <div class="form-row">
+ <label for="contact-no-billing">Contact No.:</label>
+ <input type="tel" id="contact-no-billing" value="">
+ </div>
+ <div class="form-row">
+ <label for="country-billing">Country:</label>
+ <select id="country-billing" disabled>
+ <option value="India" selected>India</option>
+<div >
+ <button type="submit">Done</button>
+ </div>
+ </select>
+<div class="form-row">
+  <br>
+  <br>
+<button ><a href="payment.html"> proceed to payment</button></a>
+</div>
+ </div>
+
+</body>
+</html>

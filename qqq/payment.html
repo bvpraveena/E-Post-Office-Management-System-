@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <center>  <h1> proceed to payment</h1></center>
+    <style>
+        form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,52);
+}
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="address"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+}
+button:hover {
+    background-color: #4f48cc;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        function sup()
+        {
+          alert("payment successful ");
+        }
+      </script>
+    <form>
+        <label> name </label>   
+<input type="text" name="name" placeholder= "name" size="15" required />   
+  
+<div>  
+<label>
+    card holder name:
+</label> 
+<input type="text" name="card holder name" placeholder= "card holder name" size="15" required />   
+</div>
+<div>
+    <label> CVV</label>
+    <input type="text" name="cvv" placeholder= "cvv" size="3" required />   
+
+</div>
+<label>   
+Gender :  
+
+</label>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+ 
+<label>  
+    <div> 
+Phone :  
+
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required> 
+</div>
+<div>
+Current Address : 
+<br>
+<textarea cols="50" rows="5" placeholder="Current Address" value="address" required>  
+</textarea> 
+</div>
+<div> 
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+</div> 
+<div>
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  </div>
+  <div>
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required> 
+</div>
+<button onclick='sup()'> <a href="index.html">Pay</button></a>
+</form>  
+
+</body>
+</html>
